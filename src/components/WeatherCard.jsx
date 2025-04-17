@@ -18,7 +18,7 @@ export default function WeatherCard({ weather, loading }) {
   if (!weather) return null;
 
   return (
-    <Card className="glass-card p-4 text-center">
+    <Card className="glass-card p-4 text-center mx-auto" style={{ maxWidth: "500px" }}>
       <Card.Body>
         <Row className="align-items-center mb-4">
           <Col>
@@ -78,3 +78,4 @@ export default function WeatherCard({ weather, loading }) {
     </Card>
   );
 }
+
